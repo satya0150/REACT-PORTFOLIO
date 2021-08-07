@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .max-width Styling*/
+
+.max-width{
+  max-width: 70%;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .max-width{
+    max-width: 90%;
+    margin: auto;
+  }
+}
+.about .max-width,
+.skill .max-width,
+.experience .max-width{
+  padding: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+/*Navbar Styling */
+
+.navbar{
+  background-color: #720D5D;
+  padding-bottom: 0rem !important;
+  border-bottom: 1px solid rgb(167, 231, 151) !important;
+}
+.navbar-brand{
+  font-size: 30px !important;
+}
+.logo{
+  font-family: 'Pacifico', cursive;
+  color: rgb(0, 195, 255) !important;
+}
+.nav-tabs{
+  border-bottom:0!important;
+}
+.nav-link{
+  color: rgb(0, 195, 255) !important;
+  font-family: 'Merienda', cursive;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover{
+  border-color: rgb(167, 231, 151) !important;
+  color: #000 !important;
+}
+.nav-link.active {
+  color: #000 !important;
+  background-color: rgb(167, 231, 151) !important ;
+  border-color: rgb(167, 231, 151)!important;
+}
+.navbar-toggler {
+  padding: .09rem .70rem !important;
+  font-size: 1.25rem;
+  line-height: 0 !important;
+}
+button:focus{
+  box-shadow: 0 !important;
+}
+
+/* home styling*/
+.home{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(167, 231, 151);
+  font-family: 'Merienda', cursive;
+}
+.about,
+.skill,
+.experience{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 20px;
+  background-color: rgb(167, 231, 151);
+  font-family: 'Merienda', cursive;
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+}
+.box,
+.left,
+.skill .right,
+.panel{
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.cont img{
+  height: 300px;
+  width: 300px;
+  margin-top: auto;
+  border-radius: 50%;
+  border: 1px solid rgb(77, 121, 66);
+  cursor: none ;
+}
+.box h1{
+  font-size: 3rem;
+}
+.hire,
+.social{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social img{
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+.social img:hover{
+  height: 70px;
+  width: 70px;
+  transition: ease 0.6s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.bnt{
+  margin: auto;
+  padding: 10px 25px;
+  background-color: black;
+  color: rgb(167, 231, 151);
+  position: relative;
+  font-family: 'Merienda', cursive;
+  cursor: pointer;
+}
+@media screen and (max-width: 755px) {
+  .box h1{
+    font-size: 30px;
+  }
+  .box h3{
+    font-size: 15px;
+  }
+}
+
+/* about styling*/
+
+.about h1,
+.skill h1,
+.experience h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.right,
+.left{
+  float: left;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about .right img{
+  height: 280px;
+  width: 280px;
+  margin-top: auto;
+  border-radius: 50%;
+  border: 1px solid rgb(126, 131, 74);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@media screen and (max-width: 991px) {
+  .right,
+  .left{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .about .right img{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* skill styling*/
+
+.skill h2,
+.experience h2{
+  text-align: center;
+}
+.skill .left,
+.skill .right{
+  display: block;
+}
+.skill img{
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  filter: grayscale(100%);
+}
+.skill img:hover{
+  height: 80px;
+  width: 80px;
+  filter: grayscale(0%);
+  transition: ease 0.6s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Experience styling*/
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #720D5D;
+  display: flex;
+  justify-content: center;
+  align-content: center !important;
+}
+.react-tabs__tab {
+  color: #000 !important;
+  font-weight: 400 !important;
+  font-size: 20px;
+}
+.react-tabs__tab:hover{
+  border: 1px  solid #720D5D !important;
+  color: rgb(0, 195, 255) !important;
+}
+.react-tabs__tab--selected {
+  background: #720D5D !important;
+  color: rgb(0, 195, 255) !important;
+}
+.react-tabs__tab-panel h2{
+  margin: 50px ;
+}
+.panel-h3{
+  margin-top: 20px;
+}
+.panel{
+  width: 700px;
+  margin-top: 50px;
+}
+.panel:hover{
+  margin-top: 30px;
+  transform: ease 1s;
+}
+.react-tabs__tab-panel a{
+  text-decoration: none;
+  color: #000;
+}
+.react-tabs__tab-panel a:hover{
+  color: #720D5D;
+}
+.panel img{
+  height: 90px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer styling*/
+
+footer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  background-color: #720D5D;
+}
+
+footer p {
+  margin: auto;
+  padding: 5px 0px;
+  color: rgb(0, 195, 255);
+  font-weight: 300;
+  font-family: 'Merienda', cursive;
+}
+
